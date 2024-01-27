@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Runtime.CompilerServices;
 
 namespace Runtime
 {
@@ -44,9 +45,11 @@ namespace Runtime
         }
 
         // Method to publish an event
-        public static void Invoke<T>(object sender, T eventData) where T : EventData
+        public static void Invoke<T>(T eventData) where T : EventData
         {
             Type eventType = typeof(T);
+            
+            Debug.Log($"EVENT BUS: Event Invoked on channel {eventType} with argument: {eventData}");
 
             // If the event type is in the dictionary, invoke the handlers
             if (Instance.eventHandlers.ContainsKey(eventType))
