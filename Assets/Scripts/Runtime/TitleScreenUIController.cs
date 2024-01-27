@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,10 +8,12 @@ using UnityEngine.UI;
 using UnityEditor;
 #endif
 
+public class MainMenuEvent : EventData {}
+
 public class TitleScreenUIController : MonoBehaviour
 {
-    [Header("Button References")] [SerializeField]
-    private Button startGameButton;
+    [Header("Button References")] 
+    [SerializeField] private Button startGameButton;
 
     [SerializeField] private Button optionsButton;
 
@@ -20,6 +23,8 @@ public class TitleScreenUIController : MonoBehaviour
 
     [Header("Panel References")] [SerializeField]
     private GameObject MainMenuPanel;
+
+    [SerializeField] private GameObject CreateProfilePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +39,15 @@ public class TitleScreenUIController : MonoBehaviour
         optionsButton.onClick.AddListener(HandleOptionsButtonPressed);
         creditsButton.onClick.AddListener(HandleCreditsButtonPressed);
         quitButton.onClick.AddListener(HandleQuitButtonPressed);
+
+        EventBus.AddListener<MainMenuEvent>(OnShowMainMenu);
     }
 
     private void HandleStartGamePressed()
     {
         Debug.Log("Start Game Button Pressed");
+        CreateProfilePanel.SetActive(true);
+        MainMenuPanel.SetActive(false);
     }
 
     private void HandleOptionsButtonPressed()
@@ -53,6 +62,12 @@ public class TitleScreenUIController : MonoBehaviour
 
     }
 
+    private void OnShowMainMenu(EventData i_event)
+    {
+        CreateProfilePanel.SetActive(false);
+        MainMenuPanel.SetActive(true);
+    }
+    
     private void HandleQuitButtonPressed()
     {
         Debug.Log("Quit Button Pressed");

@@ -23,7 +23,7 @@ public class CreateProfileUIController : MonoBehaviour
 
     [SerializeField] private TMP_Dropdown birthMonthDropDown;
     [SerializeField] private TMP_Dropdown birthDayDropDown;
-    [SerializeField] private TMP_Dropdown hometownDropDown;
+    [SerializeField] private Button submitButton;
     
     [SerializeField] private KeyValueDataString firstNameDatabaseEntry;
     
@@ -36,6 +36,7 @@ public class CreateProfileUIController : MonoBehaviour
 
         birthMonthDropDown.onValueChanged.AddListener(HandleBirthMonthInput);
         birthDayDropDown.onValueChanged.AddListener(HandleBirthDayInput);
+        submitButton.onClick.AddListener(HandleSubmitPressed);
 //        hometownDropDown.onValueChanged.AddListener(HandleHometownInput);
     }
 
@@ -49,6 +50,8 @@ public class CreateProfileUIController : MonoBehaviour
         {
             birthDayDropDown.options.Add(new TMP_Dropdown.OptionData($"{i + 1}"));
         }
+        
+        birthDayDropDown.value = 0;
     }
     
     private void HandleBirthDayInput(int input)
