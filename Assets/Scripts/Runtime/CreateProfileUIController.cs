@@ -6,6 +6,7 @@ using CleverCrow.Fluid.Databases;
 using Runtime;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerProfile : EventData
@@ -38,6 +39,15 @@ public class CreateProfileUIController : MonoBehaviour
         birthDayDropDown.onValueChanged.AddListener(HandleBirthDayInput);
         submitButton.onClick.AddListener(HandleSubmitPressed);
 //        hometownDropDown.onValueChanged.AddListener(HandleHometownInput);
+
+        var daysInMonth = DateTime.DaysInMonth(DateTime.Now.Year,  1);
+
+        birthDayDropDown.ClearOptions();
+
+        for (var i = 0; i < daysInMonth; i++)
+        {
+            birthDayDropDown.options.Add(new TMP_Dropdown.OptionData($"{i + 1}"));
+        }
     }
 
     private void HandleBirthMonthInput(int input)
@@ -94,6 +104,7 @@ public class CreateProfileUIController : MonoBehaviour
         
         EventBus.Invoke(profile);
         DataBus.Set("PlayerProfile", profile);
+        SceneManager.LoadSceneAsync("Gameplay");
     }
     
     
