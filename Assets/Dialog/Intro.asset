@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7163168201096769180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: eddf6848-ed38-4a4c-bdc7-947244667c1a
+  rect:
+    serializedVersion: 2
+    x: 50262
+    y: 50204
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 1786237702126261677}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 8c6b8e28619af2140b2857fda62c6fdc, type: 2}
+  audio: {fileID: 0}
+  dialogue: Welcome to the London Boarding School for Beans, young human. You must
+    be the American transfer student.
+--- !u!114 &-181733746253009995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 60884c07-177e-4399-b640-267927393cc1
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -7163168201096769180}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -181733746253009995}
+  - {fileID: -7163168201096769180}
+  - {fileID: 1786237702126261677}
+  - {fileID: 1135108773873930395}
+  - {fileID: 7380554458892925203}
+  root: {fileID: -181733746253009995}
+  scrollPosition: {x: 50509, y: 49995}
+--- !u!114 &1135108773873930395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 12374cd1-b749-46d2-8bb9-bde49c6f45ec
+  rect:
+    serializedVersion: 2
+    x: 50757
+    y: 50203
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: Each bean here is a caricature of a British stereotype, and we expect
+    you to adapt and embrace the culture.
+--- !u!114 &1786237702126261677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a0a29fe9-b646-4c83-b30a-17e75ab125ac
+  rect:
+    serializedVersion: 2
+    x: 50517
+    y: 50206
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 8c6b8e28619af2140b2857fda62c6fdc, type: 2}
+  audio: {fileID: 0}
+  dialogue: I am Headmaster Cannington. We pride ourselves on fostering a unique
+    environment here.
+--- !u!114 &7380554458892925203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 25e77f67-c311-4bae-970c-1db109016451
+  rect:
+    serializedVersion: 2
+    x: 51013
+    y: 50205
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: 
