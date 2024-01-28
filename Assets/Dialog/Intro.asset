@@ -74,7 +74,7 @@ MonoBehaviour:
   - {fileID: 1135108773873930395}
   - {fileID: 7380554458892925203}
   root: {fileID: -181733746253009995}
-  scrollPosition: {x: 50509, y: 49995}
+  scrollPosition: {x: 50246.473, y: 49944.5}
 --- !u!114 &1135108773873930395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,12 +95,14 @@ MonoBehaviour:
     width: 200
     height: 142
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: 7380554458892925203}
   conditions: []
-  enterActions: []
+  enterActions:
+  - {fileID: 3136446664507277908}
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 178456c2e85e5e7439afb6b07cfabfbb, type: 2}
   audio: {fileID: 0}
   dialogue: Each bean here is a caricature of a British stereotype, and we expect
     you to adapt and embrace the culture.
@@ -124,7 +126,8 @@ MonoBehaviour:
     width: 200
     height: 142
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: 1135108773873930395}
   conditions: []
   enterActions: []
   exitActions: []
@@ -133,6 +136,38 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: I am Headmaster Cannington. We pride ourselves on fostering a unique
     environment here.
+--- !u!114 &2815497703629191407
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541b1f79256847f5abff5d1cb5b21661, type: 3}
+  m_Name: ChangeRoomAction
+  m_EditorClassIdentifier: 
+  _title: ChangeRoomAction
+  _uniqueId: 3b25a791-6e47-4d46-ac9d-a33d447bc84f
+  stringEvent: {fileID: 11400000, guid: 5360563ac43e4354b977a36fbed2f933, type: 2}
+  roomName: SoccerPitch
+--- !u!114 &3136446664507277908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541b1f79256847f5abff5d1cb5b21661, type: 3}
+  m_Name: ChangeRoomAction
+  m_EditorClassIdentifier: 
+  _title: ChangeRoomAction
+  _uniqueId: fe009c9e-ea56-48f6-a015-773e29b71d62
+  stringEvent: {fileID: 11400000, guid: 5360563ac43e4354b977a36fbed2f933, type: 2}
+  roomName: DormRoom
 --- !u!114 &7380554458892925203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,16 +183,17 @@ MonoBehaviour:
   _uniqueId: 25e77f67-c311-4bae-970c-1db109016451
   rect:
     serializedVersion: 2
-    x: 51013
+    x: 51002
     y: 50205
     width: 200
     height: 142
   nodeTitle: 
   children: []
   conditions: []
-  enterActions: []
+  enterActions:
+  - {fileID: 2815497703629191407}
   exitActions: []
   choices: []
   actor: {fileID: 0}
   audio: {fileID: 0}
-  dialogue: 
+  dialogue: sdasdasd

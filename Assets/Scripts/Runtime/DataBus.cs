@@ -8,6 +8,11 @@ namespace Runtime
     {
         
     }
+
+    public class GameData<T> : GameData
+    {
+        
+    }
     public class DataBus : Singleton<DataBus>
     {
         // Dictionary to store data with a string key

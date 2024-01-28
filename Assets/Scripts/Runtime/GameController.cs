@@ -18,15 +18,27 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] private List<RoomData> _rooms;
 
+    [SerializeField] private SpriteRenderer _backgroundRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log($"{DataBus.Get<PlayerProfile>("PlayerProfile").firstName}");
+        
+        //DataBus.AddListener("CurrentRoom", HandleRoomChange);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void HandleRoomChange(string roomName)
+    {
+        var newRoom = _rooms.Find((room) => room.RoomName == roomName);
+        
+        _backgroundRenderer.sprite = newRoom.Background;
         
     }
 }
