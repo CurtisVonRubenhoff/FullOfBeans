@@ -12,6 +12,7 @@ public class RoomData
     public Sprite Background;
     public DialogueGraph RoomDialogTree;
     public List<ActorDefinition> Characters;
+    
 }
 
 public class GameController : MonoBehaviour
@@ -20,6 +21,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private DialogController _dc;
 
     [SerializeField] private SpriteRenderer _backgroundRenderer;
+    
+    public List<BeanController> beans = new();
+
 
     private RoomData currentRoom;
 
@@ -46,6 +50,12 @@ public class GameController : MonoBehaviour
         _backgroundRenderer.sprite = newRoom.Background;
         currentRoom = newRoom;
 
+  
+        foreach (var beanController in beans)
+        {
+            beanController.gameObject.SetActive(roomName == "CampusMap");
+        }
+
         StartCoroutine(RunRoomRoutine());
         //_dc.PlayDialog(newRoom.RoomDialogTree);
 
@@ -53,6 +63,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator RunRoomRoutine()
     {
+        
         yield return new WaitForSeconds(1);
         _dc.PlayDialog(currentRoom.RoomDialogTree);
     }

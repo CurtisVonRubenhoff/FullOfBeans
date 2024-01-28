@@ -23,6 +23,7 @@ namespace Runtime
         public TMP_Text lines;
         public TMP_Text speakerName;
 
+
         public RectTransform choiceList;
         [SerializeField] private ChoiceButton choicePrefab;
 

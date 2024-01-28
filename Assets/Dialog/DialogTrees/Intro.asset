@@ -68,31 +68,13 @@ MonoBehaviour:
   children:
   - {fileID: 1786237702126261677}
   conditions: []
-  enterActions:
-  - {fileID: -4130545064352013461}
+  enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: 8c6b8e28619af2140b2857fda62c6fdc, type: 2}
   audio: {fileID: 0}
   dialogue: Welcome to the London Boarding School for Beans, young human. You must
     be the American transfer student.
---- !u!114 &-4130545064352013461
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e40c08f2434b35a7f3787304073f24, type: 3}
-  m_Name: SetMusicAction
-  m_EditorClassIdentifier: 
-  _title: SetMusicAction
-  _uniqueId: a937714a-307b-4c90-ac18-6319548d28d0
-  audioEvent: {fileID: 0}
-  stopMusicEvent: {fileID: 11400000, guid: 4907ab8b732d69b4aba7f1572f448b2b, type: 2}
-  clip: {fileID: 0}
 --- !u!114 &-181733746253009995
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,241 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8738060338958068203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 0c5c9c3b-212d-4f7c-b6b2-540596921e9e
+  rect:
+    serializedVersion: 2
+    x: 50769
+    y: 50270
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -375773354426546718}
+  conditions: []
+  enterActions:
+  - {fileID: 9196429040703297082}
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: " You \u2018avin\u2019 a giggle mate? You taking the piss?"
+--- !u!114 &-7106616483560445758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Fuckbuttington Beansworth
+  children:
+  - {fileID: -6583459362170763163}
+  _uniqueId: f9abf8bd-999d-42a2-987d-3f9666711865
+--- !u!114 &-7061666110381794015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a7458fa3-ac10-44cd-bf9b-5e439703818c
+  rect:
+    serializedVersion: 2
+    x: 50494
+    y: 50503
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: -375773354426546718}
+  conditions: []
+  enterActions:
+  - {fileID: 4805213897419925816}
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: "I daresay, don\u2019t tarry too long; my balls are positively full of
+    beans!"
+--- !u!114 &-6583459362170763163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 859e9140-6f17-4eac-8196-b17cc6ab7d56
+  rect:
+    serializedVersion: 2
+    x: 50486
+    y: 50298
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions:
+  - {fileID: -4236406684320183879}
+  exitActions: []
+  choices:
+  - {fileID: -3796162847514617605}
+  - {fileID: 1214002678441428020}
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: I say, dear chap, would you mind terribly if I were to shoot a wet, sticky
+    load of beans up your bum?
+--- !u!114 &-4524751585225322797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4b1616eb-3bd2-4b24-ac4b-dd6e083ce775
+  rect:
+    serializedVersion: 2
+    x: 50467
+    y: 50061
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions:
+  - {fileID: 5086816547179968692}
+  exitActions: []
+  choices:
+  - {fileID: 88714696791318712}
+  - {fileID: 3637984973619190211}
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: " I\u2019d like to dump a steamin\u2019 hot load o\u2019 beans RIGHT
+    in your arse, mate."
+--- !u!114 &-4306045306830008907
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651b6b83ff94c5f8b926ee5967daa53, type: 3}
+  m_Name: SetBeanMoodAction
+  m_EditorClassIdentifier: 
+  _title: SetBeanMoodAction
+  _uniqueId: da4b3b90-c42e-4a2e-b06d-2e6fc6d8cd99
+  moodChannel: {fileID: 11400000, guid: 405950f387315cd4a93af0a712c1af9b, type: 2}
+  mood: blushing
+--- !u!114 &-4236406684320183879
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e40c08f2434b35a7f3787304073f24, type: 3}
+  m_Name: SetMusicAction
+  m_EditorClassIdentifier: 
+  _title: SetMusicAction
+  _uniqueId: f32d562b-4204-4cdd-babc-f06bad4f0b42
+  audioEvent: {fileID: 11400000, guid: 2b12e2f5072b01f41b0b246eaa10e9a3, type: 2}
+  stopMusicEvent: {fileID: 0}
+  clip: {fileID: 8300000, guid: 11d3bd9304553544fa04312572150a7a, type: 3}
+--- !u!114 &-3796162847514617605
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Have Sex With Him
+  children:
+  - {fileID: 7837022467973903130}
+  _uniqueId: 1e225912-ce71-4b7d-b5ef-5a644ec946f4
+--- !u!114 &-1899424387895496640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Schlongsby Suckabean
+  children:
+  - {fileID: -4524751585225322797}
+  _uniqueId: 3a9fe2a7-7407-4bc7-a390-eec5dc9a7d25
+--- !u!114 &-375773354426546718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 8b085d17-f006-4a11-97aa-57cdc7066add
+  rect:
+    serializedVersion: 2
+    x: 50202
+    y: 50152
+    width: 200
+    height: 182
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -1899424387895496640}
+  - {fileID: -7106616483560445758}
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: Who do you want to talk to?
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,8 +250,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nodes:
   - {fileID: 1027701685456802933}
+  - {fileID: -375773354426546718}
+  - {fileID: -6583459362170763163}
+  - {fileID: -4524751585225322797}
+  - {fileID: 1468590011906972710}
+  - {fileID: 7837022467973903130}
+  - {fileID: -7061666110381794015}
+  - {fileID: -8738060338958068203}
   root: {fileID: 1027701685456802933}
-  scrollPosition: {x: 0, y: 0}
+  scrollPosition: {x: 49883, y: 50103.5}
+--- !u!114 &88714696791318712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Have Sex With Him
+  children:
+  - {fileID: 1468590011906972710}
+  _uniqueId: ea96d0ab-5818-4078-a604-a4fbb16bd8cc
 --- !u!114 &1027701685456802933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,12 +290,169 @@ MonoBehaviour:
   _uniqueId: c3137617-d20a-4142-98a5-31a59cc811f3
   rect:
     serializedVersion: 2
-    x: 50050
-    y: 50200
-    width: 0
-    height: 0
+    x: 49945
+    y: 50165
+    width: 100
+    height: 57
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: -375773354426546718}
   conditions: []
   enterActions: []
   exitActions: []
+--- !u!114 &1214002678441428020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Maybe Not
+  children:
+  - {fileID: -7061666110381794015}
+  _uniqueId: 0aaf6a1c-9429-4349-83a0-642a7af9b182
+--- !u!114 &1468590011906972710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 2851c8cd-430d-4ecc-9d4c-ea62a3af7ca4
+  rect:
+    serializedVersion: 2
+    x: 50746
+    y: 50114
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions:
+  - {fileID: -4306045306830008907}
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: "Well ain\u2019t that just the dog\u2019s bollocks. Cock out then, get
+    a move on"
+--- !u!114 &3637984973619190211
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Maybe Not
+  children:
+  - {fileID: -8738060338958068203}
+  _uniqueId: 5f458e0f-4f45-495f-9a9e-ad2109521a26
+--- !u!114 &4805213897419925816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651b6b83ff94c5f8b926ee5967daa53, type: 3}
+  m_Name: SetBeanMoodAction
+  m_EditorClassIdentifier: 
+  _title: SetBeanMoodAction
+  _uniqueId: 7360f2ec-4ad6-400b-b9da-2932bd2886d2
+  moodChannel: {fileID: 11400000, guid: 21211309575c2e64c9b93c9e1ebe5591, type: 2}
+  mood: surprised
+--- !u!114 &5086816547179968692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e40c08f2434b35a7f3787304073f24, type: 3}
+  m_Name: SetMusicAction
+  m_EditorClassIdentifier: 
+  _title: SetMusicAction
+  _uniqueId: d717f3b7-4400-4e98-8a27-51fb8cb226c7
+  audioEvent: {fileID: 11400000, guid: 2b12e2f5072b01f41b0b246eaa10e9a3, type: 2}
+  stopMusicEvent: {fileID: 0}
+  clip: {fileID: 8300000, guid: 2cc62f2adf1954c4b8b1ea7a0db449a5, type: 3}
+--- !u!114 &6678241750931850149
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651b6b83ff94c5f8b926ee5967daa53, type: 3}
+  m_Name: SetBeanMoodAction
+  m_EditorClassIdentifier: 
+  _title: SetBeanMoodAction
+  _uniqueId: d9245d6f-c21f-498b-ae48-39be5885a8b5
+  moodChannel: {fileID: 11400000, guid: 21211309575c2e64c9b93c9e1ebe5591, type: 2}
+  mood: blushing
+--- !u!114 &7837022467973903130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7acf1b37-c810-48a9-80ab-522c50a9558c
+  rect:
+    serializedVersion: 2
+    x: 50770
+    y: 50496
+    width: 200
+    height: 142
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions:
+  - {fileID: 6678241750931850149}
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: "Right-o! We\u2019ll have a spiffing good butt fuck!"
+--- !u!114 &9196429040703297082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651b6b83ff94c5f8b926ee5967daa53, type: 3}
+  m_Name: SetBeanMoodAction
+  m_EditorClassIdentifier: 
+  _title: SetBeanMoodAction
+  _uniqueId: 391f4a94-cfd8-45c2-8627-ddd1e65ea7db
+  moodChannel: {fileID: 11400000, guid: 405950f387315cd4a93af0a712c1af9b, type: 2}
+  mood: surprised
