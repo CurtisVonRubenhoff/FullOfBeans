@@ -592,6 +592,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f5f94008cfd634aa693241d27656d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rooms:
+  - RoomName: DormRoom
+    Background: {fileID: 0}
+    RoomDialogTree: {fileID: 0}
+    Characters: []
+  - RoomName: SoccerPitch
+    Background: {fileID: 0}
+    RoomDialogTree: {fileID: 0}
+    Characters: []
 --- !u!4 &807857392
 Transform:
   m_ObjectHideFlags: 0
