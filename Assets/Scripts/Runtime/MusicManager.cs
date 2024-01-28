@@ -48,6 +48,20 @@ namespace Runtime
                 }
             }
         }
+        
+        public void FadeOutAll()
+        {
+            foreach (var kvp in audioSources)
+            {
+                AudioClip clip = kvp.Key;
+                AudioSource source = kvp.Value;
+
+                if (source.isPlaying)
+                {
+                    StartCoroutine(CrossfadeCoroutine(source, source.volume, 0f, crossfadeDuration));
+                }
+            }
+        }
 
         // Coroutine for crossfading
         private System.Collections.IEnumerator CrossfadeCoroutine(AudioSource source, float startVolume,

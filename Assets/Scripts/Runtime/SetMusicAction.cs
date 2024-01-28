@@ -12,6 +12,7 @@ namespace Runtime
     {
 
         public AudioClipGameEvent audioEvent;
+        public GameEvent stopMusicEvent;
         public AudioClip clip;
         public override void OnInit (IDialogueController dialogue) {
             // Run the first time the action is triggered
@@ -19,7 +20,9 @@ namespace Runtime
 
         public override void OnStart () {
             // Runs when the action begins triggering
-            audioEvent.Raise(clip);
+
+            if (clip) audioEvent.Raise(clip);
+            else stopMusicEvent.Raise();
         }
 
         public override ActionStatus OnUpdate () {
