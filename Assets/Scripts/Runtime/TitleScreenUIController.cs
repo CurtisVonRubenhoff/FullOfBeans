@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Runtime;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,9 @@ public class TitleScreenUIController : MonoBehaviour
     private GameObject MainMenuPanel;
 
     [SerializeField] private GameObject CreateProfilePanel;
+    
+    [SerializeField] private AudioClip titleScreenMusic;
+    [SerializeField] private AudioClipGameEvent musicEventChannel;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +45,8 @@ public class TitleScreenUIController : MonoBehaviour
         quitButton.onClick.AddListener(HandleQuitButtonPressed);
 
         EventBus.AddListener<MainMenuEvent>(OnShowMainMenu);
+        
+        musicEventChannel.Raise(titleScreenMusic);
     }
 
     private void HandleStartGamePressed()

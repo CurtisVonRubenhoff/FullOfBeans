@@ -952,20 +952,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458693390}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 2b12e2f5072b01f41b0b246eaa10e9a3, type: 2}
-        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase`1[[UnityEngine.AudioClip,
-          UnityEngine
-        m_MethodName: Raise
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 7c14f882644182f49bc7b6206d4966a9, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &458693390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,6 +1221,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2b12e2f5072b01f41b0b246eaa10e9a3, type: 2}
+        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase`1[[UnityEngine.AudioClip,
+          UnityEngine
+        m_MethodName: Raise
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 4726b3ef3465ca54f88e515f34976aef, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1708,6 +1708,8 @@ MonoBehaviour:
   quitButton: {fileID: 986757872}
   MainMenuPanel: {fileID: 1302097314}
   CreateProfilePanel: {fileID: 1169146906}
+  titleScreenMusic: {fileID: 8300000, guid: 4726b3ef3465ca54f88e515f34976aef, type: 3}
+  musicEventChannel: {fileID: 11400000, guid: 2b12e2f5072b01f41b0b246eaa10e9a3, type: 2}
 --- !u!223 &575995902
 Canvas:
   m_ObjectHideFlags: 0
@@ -4936,7 +4938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d53d68fcaa458aa14c5d5275dc1228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crossfadeDuration: 2
+  titleScreenMusic: {fileID: 8300000, guid: 4726b3ef3465ca54f88e515f34976aef, type: 3}
+  crossfadeDuration: 1.5
 --- !u!114 &1964498509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,7 +4988,7 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 4907ab8b732d69b4aba7f1572f448b2b, type: 2}
   _event: {fileID: 11400000, guid: 4907ab8b732d69b4aba7f1572f448b2b, type: 2}
   _response:
     m_PersistentCalls:

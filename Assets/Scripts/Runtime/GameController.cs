@@ -17,8 +17,11 @@ public class RoomData
 public class GameController : MonoBehaviour
 {
     [SerializeField] private List<RoomData> _rooms;
+    [SerializeField] private DialogController _dc;
 
     [SerializeField] private SpriteRenderer _backgroundRenderer;
+
+    private RoomData currentRoom;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +41,19 @@ public class GameController : MonoBehaviour
     {
         var newRoom = _rooms.Find((room) => room.RoomName == roomName);
         
-        _backgroundRenderer.sprite = newRoom.Background;
+        //_dc.StopDialog();
         
+        _backgroundRenderer.sprite = newRoom.Background;
+        currentRoom = newRoom;
+
+        StartCoroutine(RunRoomRoutine());
+        //_dc.PlayDialog(newRoom.RoomDialogTree);
+
+    }
+
+    private IEnumerator RunRoomRoutine()
+    {
+        yield return new WaitForSeconds(1);
+        _dc.PlayDialog(currentRoom.RoomDialogTree);
     }
 }

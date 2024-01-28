@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Runtime
@@ -8,8 +9,16 @@ namespace Runtime
         // Dictionary to store AudioSources with audio clips as keys
         private Dictionary<AudioClip, AudioSource> audioSources = new Dictionary<AudioClip, AudioSource>();
 
+        [SerializeField] private AudioClip titleScreenMusic;
+        
+
         // Crossfade duration in seconds
         public float crossfadeDuration = 2f;
+
+        private void Start()
+        {
+            CrossfadeToClip(titleScreenMusic);
+        }
 
         // Public method to initiate crossfade to a new audio clip
         public void CrossfadeToClip(AudioClip newClip)

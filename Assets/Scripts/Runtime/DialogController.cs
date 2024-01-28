@@ -41,8 +41,8 @@ namespace Runtime
                 ClearChoices();
                 //portrait.sprite = actor.Portrait;
                 lines.text = text;
-                speakerName.text = actor.DisplayName;
-
+                if (actor != null) speakerName.text = actor.DisplayName;
+                else speakerName.text = "";
                 StartCoroutine(NextDialogue());
             });
 
@@ -52,12 +52,13 @@ namespace Runtime
                 speakerContainer.SetActive(true);
                 //portrait.sprite = actor.Portrait;
                 lines.text = text;
-                speakerName.text = actor.DisplayName;
+                if (actor != null) speakerName.text = actor.DisplayName;
+                else speakerName.text = "";
                 choices.ForEach(c =>
                 {
-                    //var choice = Instantiate(choicePrefab, choiceList);
-                    //choice.title.text = c.Text;
-                    //choice.clickEvent.AddListener(_ctrl.SelectChoice);
+                    var choice = Instantiate(choicePrefab, choiceList);
+                    choice.title.text = c.Text;
+                    choice.clickEvent.AddListener(_ctrl.SelectChoice);
                 });
             });
 
@@ -96,6 +97,11 @@ namespace Runtime
             _ctrl.Next();
         }
 
+        public void StopDialog()
+        {
+            //_ctrl.Stop();
+        }
+
         private void StartDialogue(DialogueGraph i_dialogue)
         {
             dialogue = i_dialogue;
@@ -108,9 +114,9 @@ namespace Runtime
             _ctrl.Tick();
         }
 
-        public void PlayDialog()
+        public void PlayDialog(DialogueGraph i_dialog)
         {
-            _ctrl.Play(dialogue, gameObjectOverrides.ToArray<IGameObjectOverride>());
+            _ctrl.Play(i_dialog, gameObjectOverrides.ToArray<IGameObjectOverride>());
         }
     }
 }
