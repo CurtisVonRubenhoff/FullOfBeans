@@ -53,6 +53,8 @@ public class CreateProfileUIController : MonoBehaviour
     private void HandleBirthMonthInput(int input)
     {
         var daysInMonth = DateTime.DaysInMonth(DateTime.Now.Year, input + 1);
+        
+        if (daysInMonth == birthDayDropDown.options.Count) return;
 
         birthDayDropDown.ClearOptions();
 
