@@ -10,6 +10,7 @@ namespace Runtime
         public TMP_Text title;
         public Button button;
         public UnityEvent<int> clickEvent = new ActivateChoiceIndexEvent();
+        
 
         private class ActivateChoiceIndexEvent : UnityEvent<int>
         {

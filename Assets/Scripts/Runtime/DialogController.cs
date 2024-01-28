@@ -57,7 +57,7 @@ namespace Runtime
                 choices.ForEach(c =>
                 {
                     var choice = Instantiate(choicePrefab, choiceList);
-                    choice.title.text = c.Text;
+                    choice.title.text = $"[ {c.Text}";
                     choice.clickEvent.AddListener(_ctrl.SelectChoice);
                 });
             });
