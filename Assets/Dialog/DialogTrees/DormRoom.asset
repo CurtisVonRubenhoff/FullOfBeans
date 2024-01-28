@@ -31,8 +31,8 @@ MonoBehaviour:
   _uniqueId: 9d182933-03f2-4634-96cd-8228156ab7e2
   rect:
     serializedVersion: 2
-    x: 50213
-    y: 50181
+    x: 50345
+    y: 50121
     width: 200
     height: 142
   nodeTitle: 
@@ -45,6 +45,35 @@ MonoBehaviour:
   actor: {fileID: 0}
   audio: {fileID: 0}
   dialogue: You leave the dorm.
+--- !u!114 &-4318487233167601108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e308b21e-0b7c-4d07-9dca-345afd925ace
+  rect:
+    serializedVersion: 2
+    x: 50167
+    y: 50317
+    width: 200
+    height: 142
+  nodeTitle: 
+  children:
+  - {fileID: 5095670953283705705}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 0}
+  audio: {fileID: 0}
+  dialogue: Just the color blue.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +90,7 @@ MonoBehaviour:
   - {fileID: 1027701685456802933}
   - {fileID: 5095670953283705705}
   - {fileID: -4484379820953389437}
+  - {fileID: -4318487233167601108}
   root: {fileID: 1027701685456802933}
   scrollPosition: {x: 49515, y: 49930}
 --- !u!114 &1027701685456802933
@@ -88,6 +118,22 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions: []
+--- !u!114 &1923247245556078973
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Look Around
+  children:
+  - {fileID: -4318487233167601108}
+  _uniqueId: bdc3dcb1-9c3c-4941-8e08-e15461ae877e
 --- !u!114 &2936513892070994114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,8 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: ChangeRoomAction
   _uniqueId: 607bce61-6c44-4f10-8716-555d5e5e965c
-  stringEvent: {fileID: 0}
-  roomName: 
+  stringEvent: {fileID: 11400000, guid: 5360563ac43e4354b977a36fbed2f933, type: 2}
+  roomName: CampusMap
 --- !u!114 &5095670953283705705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +168,7 @@ MonoBehaviour:
     x: 49893
     y: 50147
     width: 200
-    height: 162
+    height: 182
   nodeTitle: 
   children: []
   conditions: []
@@ -130,6 +176,7 @@ MonoBehaviour:
   exitActions: []
   choices:
   - {fileID: -6446036234429367911}
+  - {fileID: 1923247245556078973}
   actor: {fileID: 0}
   audio: {fileID: 0}
   dialogue: Today's the first day of classes. Better make it to the opening assembly
