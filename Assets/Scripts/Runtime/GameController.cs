@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log($"{DataBus.Get<PlayerProfile>("PlayerProfile").firstName}");
+        //Debug.Log($"{DataBus.Get<PlayerProfile>("PlayerProfile").firstName}");
         
         //DataBus.AddListener("CurrentRoom", HandleRoomChange);
     }

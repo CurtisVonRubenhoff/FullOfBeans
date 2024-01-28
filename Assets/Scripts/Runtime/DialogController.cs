@@ -39,7 +39,7 @@ namespace Runtime
             {
                 speakerContainer.SetActive(true);
                 ClearChoices();
-                portrait.sprite = actor.Portrait;
+                //portrait.sprite = actor.Portrait;
                 lines.text = text;
                 speakerName.text = actor.DisplayName;
 
@@ -50,14 +50,14 @@ namespace Runtime
             {
                 ClearChoices();
                 speakerContainer.SetActive(true);
-                portrait.sprite = actor.Portrait;
+                //portrait.sprite = actor.Portrait;
                 lines.text = text;
                 speakerName.text = actor.DisplayName;
                 choices.ForEach(c =>
                 {
-                    var choice = Instantiate(choicePrefab, choiceList);
-                    choice.title.text = c.Text;
-                    choice.clickEvent.AddListener(_ctrl.SelectChoice);
+                    //var choice = Instantiate(choicePrefab, choiceList);
+                    //choice.title.text = c.Text;
+                    //choice.clickEvent.AddListener(_ctrl.SelectChoice);
                 });
             });
 
@@ -71,10 +71,13 @@ namespace Runtime
 
             //_dialogueEvent.AddListener(StartDialogue);
             //_ctrl.Events.End.Invoke();
+            
+            StartDialogue(dialogue);
         }
 
         private void ClearChoices()
         {
+            if (!choiceList) return;
             foreach (Transform child in choiceList)
             {
                 Destroy(child.gameObject);
