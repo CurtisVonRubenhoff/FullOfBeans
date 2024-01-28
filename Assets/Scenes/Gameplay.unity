@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 250184336}
   - component: {fileID: 250184335}
   - component: {fileID: 250184334}
+  - component: {fileID: 250184338}
   m_Layer: 0
   m_Name: baked-bean-default
   m_TagString: Untagged
@@ -243,6 +244,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250184338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250184333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636b72f8fc644b4418a9e8ad0f4f804f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 21211309575c2e64c9b93c9e1ebe5591, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 250184334}
+        m_TargetAssemblyTypeName: BeanController, Assembly-CSharp
+        m_MethodName: SetMood
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: 
 --- !u!1001 &436159663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -572,6 +606,7 @@ GameObject:
   - component: {fileID: 688700197}
   - component: {fileID: 688700196}
   - component: {fileID: 688700199}
+  - component: {fileID: 688700200}
   m_Layer: 0
   m_Name: butler-bean
   m_TagString: Untagged
@@ -680,6 +715,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 688700196}
+--- !u!114 &688700200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688700195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636b72f8fc644b4418a9e8ad0f4f804f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 9406b72064bd0534f8c1b23f4fd9bcff, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 688700199}
+        m_TargetAssemblyTypeName: BeanController, Assembly-CSharp
+        m_MethodName: SetMood
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: 
 --- !u!1 &743894056
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +984,7 @@ GameObject:
   - component: {fileID: 1022997072}
   - component: {fileID: 1022997071}
   - component: {fileID: 1022997070}
+  - component: {fileID: 1022997074}
   m_Layer: 0
   m_Name: based-default
   m_TagString: Untagged
@@ -1024,6 +1093,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1022997074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022997069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636b72f8fc644b4418a9e8ad0f4f804f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 405950f387315cd4a93af0a712c1af9b, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1022997070}
+        m_TargetAssemblyTypeName: BeanController, Assembly-CSharp
+        m_MethodName: SetMood
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: 
 --- !u!1001 &1056892743
 PrefabInstance:
   m_ObjectHideFlags: 0

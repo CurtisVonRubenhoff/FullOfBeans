@@ -44,8 +44,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: SetMusicAction
   _uniqueId: 6b0b0d4d-306f-41c4-b7e8-f3a9a1651ab0
-  audioEvent: {fileID: 0}
-  clip: {fileID: 0}
+  audioEvent: {fileID: 11400000, guid: 2b12e2f5072b01f41b0b246eaa10e9a3, type: 2}
+  clip: {fileID: 8300000, guid: 9a58871cb71fbe34686f2dc83fd2400b, type: 3}
 --- !u!114 &-181733746253009995
 MonoBehaviour:
   m_ObjectHideFlags: 0
